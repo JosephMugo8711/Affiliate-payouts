@@ -1,4 +1,4 @@
-# Global-Payout-Platform
+# Affiliate-payouts
 *****
 ****
 ## Project Description
