@@ -31,6 +31,8 @@ https://www.figma.com/file/rR5LpNO24Ynth0mzQQQvDM/Untitled?type=design&node-id=1
 - Start the backend: npm start.
 
 *****
+https://medium.com/@10969akmal/javascript-data-structures-and-algorithms-linked-lists-170367b7bcd4
+
 *****
 ## Features
 
