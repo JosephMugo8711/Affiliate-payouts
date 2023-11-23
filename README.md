@@ -4,9 +4,6 @@
 ## Project Description
 A solution for On-click global Payouts for Affiliates and Influencers in any country. Enables Businesses to grow their sales and traction by signing up Influencers and Affiliates and paying them out.
 ******
-
-
-
 *****
 ## SetUp Instruction
 ### Requirements
