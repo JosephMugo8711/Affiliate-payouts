@@ -8,7 +8,7 @@ const userSchema = new mongoose.Schema({
   fullName: {
     type: String,
     required: [true, 'Please tell us your name!'],
-  },
+  },  
   username: {
     type: String,
   },
@@ -69,8 +69,8 @@ const userSchema = new mongoose.Schema({
   passwordResetExpires: Date,
   active: {
     type: Boolean,
-    default: false,
-    select: false,
+    default: true,
+    select: true,
   },
 });
 
