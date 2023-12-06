@@ -37,6 +37,7 @@ exports.signup = catchAsync(async (req, res, next) => {
     phone: req.body.phone,
     password: req.body.password,
     passwordConfirm: req.body.passwordConfirm,
+    referrer: referral ? referral._id : null
   });
 
   createSendToken(newUser, 201, req, res);
