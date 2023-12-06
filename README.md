@@ -22,7 +22,7 @@ For instance, an affiliate on the platform requests a payout of $100. The busine
 
 ### Resources
 https://chimoney.readme.io/reference/post_v0-2-payment-initiate
-
+https://dash.chimoney.io/
 
 ### Getting Started
 1. Clone this repository.
