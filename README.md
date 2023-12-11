@@ -43,17 +43,6 @@ For instance, an affiliate on the platform requests a payout of $100. The busine
 https://medium.com/@10969akmal/javascript-data-structures-and-algorithms-linked-lists-170367b7bcd4
 
 *****
-## Features
-
-### User Authentication
-
-- **User Authentication:** Allow affiliates and businesses to create accounts and log in securely.
-
-### Dashboard
-
-- **Dashboard Home:** The central hub for affiliates and businesses, offering an overview of earnings, recent payout requests, transaction history.
-
-- **Referral Program:** Allow users see their referrals and to refer new affiliates or businesses to the platform.
 *****
 ## Dependencies
 - node
