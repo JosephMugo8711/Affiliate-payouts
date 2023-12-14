@@ -1,19 +1,18 @@
-import React,  { Suspense } from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import store from './app/store'
-import { Provider } from 'react-redux'
-import SuspenseContent from './containers/SuspenseContent';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+import store from "./redux-toolkit/store";
+import "./index.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import App from "./App";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
-  // <React.StrictMode>
-    <Suspense fallback={<SuspenseContent />}>
-        <Provider store={store}>
-            <App />
-        </Provider>
-    </Suspense>
-  // </React.StrictMode>
+  <BrowserRouter>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </BrowserRouter>
 );
 
