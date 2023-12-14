@@ -1,13 +1,17 @@
 
 import './App.css';
-import SignupForm from './pages/Register';
+import Register from './features/user/Register';
+import Login from './features/user/Login';
 import { Routes, Route } from 'react-router-dom';
+import ForgotPassword from './features/user/RegisterPassword';
 
 function App() {
   return (
     <>
       <Routes>
-         <Route path="/" element={<SignupForm />} />
+         <Route path="/" element={<Register />} />
+         <Route path="/login" element={<Login/>}/>
+         <Route path="/forgotpassword" element={<ForgotPassword/>}/>
       </Routes>
     </>
   );
