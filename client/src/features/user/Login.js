@@ -36,15 +36,15 @@ function Login(){
     }
 
     return (
-        <div className="min-h-screen bg-[#fbfffa] justify-self-center flex items-center">
+        <div className="min-h-screen  bg-[#f1e7f2] justify-self-center flex items-center">
            <div className="card mx-auto w-full max-w-5xl   shadow-xl">
-             <div className="grid  md:grid-cols-2 grid-cols-1  bg-base-100 rounded-xl">
+             <div className="flex justify-center grid-cols-1  bg-base-100 rounded-xl">
                     <div className='py-24 px-10 flex flex-col items-center'>
                         <h2 className='text-2xl font-semibold mb-2 text-center'>Login</h2>
                         <form onSubmit={(e) => submitForm(e)}>
                             <div className="mb-4">
-                                <InputText type="emailId" defaultValue={loginObj.emailId} updateType="emailId" containerStyle="mt-4" labelTitle="Email Id" updateFormValue={updateFormValue} />
-                                <InputText defaultValue={loginObj.password} type="password" updateType="password" containerStyle="mt-4" labelTitle="Password" updateFormValue={updateFormValue} />
+                                <InputText type="emailId" defaultValue={loginObj.emailId} updateType="emailId" containerStyle="mt-4 form-control form-control-lg mt-4 p-4 text-lg" labelTitle="Email Id" updateFormValue={updateFormValue} />
+                                <InputText defaultValue={loginObj.password} type="password" updateType="password" containerStyle="mt-4 form-control form-control-lg mt-4 p-4 text-lg" labelTitle="Password" updateFormValue={updateFormValue} />
                             </div>
                             <div className='text-right text-primary'>
                                 <Link to="/forgotpassword"><span className="text-sm inline-block hover:text-primary hover:underline hover:cursor-pointer transition duration-200">Forgot Password?</span></Link>
