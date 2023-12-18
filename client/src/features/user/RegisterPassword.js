@@ -66,7 +66,7 @@ function ForgotPassword(){
                                 </div>
 
                                 <ErrorText styleClass="mt-12">{errorMessage}</ErrorText>
-                                <button type="submit" className={"btn mt-2 rounded-full w-full btn-primary bg-[#670b77] text-white" + (loading ? " loading" : "")}>Send Reset Link</button>
+                                <button type="submit" className={"btn mt-2 p-2 rounded-full w-full btn-primary bg-[#670b77] text-white" + (loading ? " loading" : "")}>Send Reset Link</button>
 
                                 <div className='text-center mt-4'>Don't have an account yet? <Link to="/"><button className="  inline-block  hover:text-primary hover:underline hover:cursor-pointer transition duration-200">Register</button></Link></div>
                             </form>
