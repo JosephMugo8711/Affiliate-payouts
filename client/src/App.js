@@ -35,7 +35,6 @@ function App() {
           <Route path="/login" element={<Login/>}/>
           <Route path="/forgotpassword" element={<ForgotPassword/>}/>
 
-          // Any path starting with /app/ will match this route
  
           <Route path="/dashboard/*" element={<Layout />} />
 
