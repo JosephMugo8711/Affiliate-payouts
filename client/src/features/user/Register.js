@@ -12,9 +12,9 @@ function Register(){
         emailId : ""
     }
 
-    const [loading, setLoading] = useState(false)
-    const [errorMessage, setErrorMessage] = useState("")
-    const [registerObj, setRegisterObj] = useState(INITIAL_REGISTER_OBJ)
+    const [loading, setLoading] = useState(false);
+    const [errorMessage, setErrorMessage] = useState("");
+    const [registerObj, setRegisterObj] = useState(INITIAL_REGISTER_OBJ);
 
     const submitForm = (e) =>{
         e.preventDefault()
