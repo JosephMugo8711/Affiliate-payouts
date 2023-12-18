@@ -37,9 +37,9 @@ function App() {
 
           // Any path starting with /app/ will match this route
  
-          <Route path="/app/*" element={<Layout />} />
+          <Route path="/dashboard/*" element={<Layout />} />
 
-          <Route path="*" element={<Navigate to={token ? "/app/welcome" : "/login"} replace />}/>
+          <Route path="*" element={<Navigate to={token ? "/dashboard/default" : "/login"} replace />}/>
 
         </Routes>
       </Router>
