@@ -1,10 +1,8 @@
 import React from 'react';
 import Header from './Header';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Suspense, lazy } from 'react';
+import {  Route, Routes } from 'react-router-dom';
+import { Suspense } from 'react';
 import SuspenseContent from "./SuspenseContent";
-import { useSelector } from 'react-redux';
-import { useEffect, useRef } from "react";
 
 const PageContent = () => {
   return (
@@ -14,7 +12,7 @@ const PageContent = () => {
                 <Suspense fallback={<SuspenseContent />}>
                         <Routes>
                             {
-                                routes.map((route, key) => {
+                                Routes.map((route, key) => {
                                     return(
                                         <Route
                                             key={key}

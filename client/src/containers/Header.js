@@ -1,10 +1,13 @@
-import { themeChange } from "theme-change";
-import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { NavLink,  Routes, Link , useLocation} from 'react-router-dom'
+import { themeChange } from 'theme-change'
+import React, {  useEffect, useState } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import BellIcon  from '@heroicons/react/24/outline/BellIcon'
+import Bars3Icon  from '@heroicons/react/24/outline/Bars3Icon'
+import MoonIcon from '@heroicons/react/24/outline/MoonIcon'
+import SunIcon from '@heroicons/react/24/outline/SunIcon'
 import { openRightDrawer } from '../features/common/rightDrawerSlice';
 import { RIGHT_DRAWER_TYPES } from '../utils/globalConstantUtil'
-import React from 'react'
+import { NavLink,  Routes, Link , useLocation} from 'react-router-dom'
 
 const Header = () => {
   
@@ -21,11 +24,8 @@ const Header = () => {
                 setCurrentTheme("light")
             }
         }
-        // 👆 false parameter is required for react project
       }, [])
 
-
-    // Opening right sidebar for notification
     const openNotification = () => {
         dispatch(openRightDrawer({header : "Notifications", bodyType : RIGHT_DRAWER_TYPES.NOTIFICATION}))
     }
@@ -77,12 +77,11 @@ const Header = () => {
             </label>
             <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                 <li className="justify-between">
-                <Link to={'/app/settings-profile'}>
+                <Link to={'/dashboard/settings-profile'}>
                     Profile Settings
                     <span className="badge">New</span>
                     </Link>
                 </li>
-                <li className=''><Link to={'/app/settings-billing'}>Bill History</Link></li>
                 <div className="divider mt-0 mb-0"></div>
                 <li><a onClick={logoutUser}>Logout</a></li>
             </ul>
