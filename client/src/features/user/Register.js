@@ -6,9 +6,13 @@ import InputText from '../../components/Input/InputText'
 function Register(){
 
     const INITIAL_REGISTER_OBJ = {
-        name : "",
+        fullName : "",
+        username : "",
+        email : "",
+        phone : "",
         password : "",
-        emailId : ""
+        passwordConfirm : ""
+       
     }
 
     const [loading, setLoading] = useState(false);
@@ -46,11 +50,17 @@ function Register(){
 
                         <div className="mb-4">
 
-                            <InputText defaultValue={registerObj.name} updateType="name" containerStyle="mt-4 form-control form-control-lg mt-4 p-4 text-lg" labelTitle="Name" updateFormValue={updateFormValue}/>
+                            <InputText defaultValue={registerObj.fullName} updateType="fullname" containerStyle="mt-4 form-control form-control-lg mt-4 p-4 text-lg" labelTitle="fullName" updateFormValue={updateFormValue}/>
 
-                            <InputText defaultValue={registerObj.emailId} updateType="emailId" containerStyle="mt-4 form-control form-control-lg mt-4 p-4 text-lg" labelTitle="Email Id" updateFormValue={updateFormValue}/>
+                            <InputText defaultValue={registerObj.username} updateType="username" containerStyle="mt-4 form-control form-control-lg mt-4 p-4 text-lg" labelTitle="Username" updateFormValue={updateFormValue}/>
 
-                            <InputText defaultValue={registerObj.password} type="password" updateType="password" containerStyle="mt-4 form-control form-control-lg mt-4 p-4 text-lg" labelTitle="Password" updateFormValue={updateFormValue}/>
+                            <InputText defaultValue={registerObj.email} updateType="email" containerStyle="mt-4 form-control form-control-lg mt-4 p-4 text-lg" labelTitle="Email" updateFormValue={updateFormValue}/>
+
+                            <InputText defaultValue={registerObj.phone} updateType="phone" containerStyle="mt-4 form-control form-control-lg mt-4 p-4 text-lg" labelTitle="Phone" updateFormValue={updateFormValue}/>
+
+                            <InputText defaultValue={registerObj.password}  updateType="password"  containerStyle="mt-4 form-control form-control-lg mt-4 p-4 text-lg" labelTitle="Password" updateFormValue={updateFormValue}/>
+
+                            <InputText defaultValue={registerObj.passwordConfirm} type="passwordConfirm" updateType="passwordConfirm" containerStyle="mt-4 form-control form-control-lg mt-4 p-4 text-lg" labelTitle="PasswordConfirm" updateFormValue={updateFormValue}/>
 
                         </div>
 
