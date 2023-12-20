@@ -7,7 +7,7 @@ function Login(){
 
     const INITIAL_LOGIN_OBJ = {
         password : "",
-        emailId : ""
+        email : ""
     }
 
     const [loading, setLoading] = useState(false)
@@ -42,7 +42,7 @@ function Login(){
                         <h2 className='text-2xl font-semibold mb-2 text-center'>Login</h2>
                         <form onSubmit={(e) => submitForm(e)}>
                             <div className="mb-4">
-                                <InputText type="emailId" defaultValue={loginObj.emailId} updateType="emailId" containerStyle="mt-4 form-control form-control-lg mt-4 p-4 text-lg" labelTitle="Email Id" updateFormValue={updateFormValue} />
+                                <InputText type="emailId" defaultValue={loginObj.email} updateType="emailId" containerStyle="mt-4 form-control form-control-lg mt-4 p-4 text-lg" labelTitle="Email Id" updateFormValue={updateFormValue} />
                                 <InputText defaultValue={loginObj.password} type="password" updateType="password" containerStyle="mt-4 form-control form-control-lg mt-4 p-4 text-lg" labelTitle="Password" updateFormValue={updateFormValue} />
                             </div>
                             <div className='text-right text-primary'>
