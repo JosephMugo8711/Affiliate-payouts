@@ -1,16 +1,10 @@
 const mongoose = require('mongoose');
 
 const referralSchema = new mongoose.Schema({
-  referralLevel: {
-    type: String,
-  },
   referralSlug: {
     type: String,
   },
   referrerId: {
-    type: String,
-  },
-  referredId: {
     type: String,
   },
   referredUsername: {

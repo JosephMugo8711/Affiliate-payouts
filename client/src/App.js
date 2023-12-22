@@ -39,7 +39,7 @@ function App() {
  
           <Route path="/dashboard/*" element={<Layout />} />
 
-          <Route path="*" element={<Navigate to={token ? "/dashboard/default" : "/login"} replace />}/>
+         
 
         </Routes>
       </Router>
