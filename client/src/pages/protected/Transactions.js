@@ -1,11 +1,19 @@
-import React from 'react'
+import { useEffect } from 'react'
+import { useDispatch } from 'react-redux'
+import { setPageTitle } from '../../features/common/headerSlice'
+import Transactions from '../../features/transactions'
 
-const Transactions = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+function InternalPage(){
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(setPageTitle({ title : "Transactions"}))
+      }, [])
+
+
+    return(
+        <Transactions />
+    )
 }
 
-export default Transactions
+export default InternalPage
