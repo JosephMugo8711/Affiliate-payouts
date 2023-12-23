@@ -18,7 +18,7 @@ const routes = [
   {
     path: '/app/leads', 
     icon: <InboxArrowDownIcon className={iconClasses}/>, 
-    name: 'Leads', r
+    name: 'Leads', 
   },
   {
     path: '/app/transactions', 

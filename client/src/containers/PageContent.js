@@ -6,7 +6,6 @@ import SuspenseContent from "./SuspenseContent"
 import { useSelector } from 'react-redux'
 import { useEffect, useRef } from "react"
 
-const Page404 = lazy(() => import('../pages/protected/404'))
 
 
 function PageContent(){
