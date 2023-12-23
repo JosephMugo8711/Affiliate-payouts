@@ -1,7 +1,6 @@
 import Squares2X2Icon from '@heroicons/react/24/outline/Squares2X2Icon'
 import CalendarDaysIcon from '@heroicons/react/24/outline/CalendarDaysIcon'
 import BoltIcon from '@heroicons/react/24/outline/BoltIcon'
-import ChartBarIcon from '@heroicons/react/24/outline/ChartBarIcon'
 import CurrencyDollarIcon from '@heroicons/react/24/outline/CurrencyDollarIcon'
 import InboxArrowDownIcon from '@heroicons/react/24/outline/InboxArrowDownIcon'
 
@@ -17,24 +16,24 @@ const routes = [
     name: 'Dashboard',
   },
   {
-    path: '/app/leads', // url
-    icon: <InboxArrowDownIcon className={iconClasses}/>, // icon component
-    name: 'Leads', // name that appear in Sidebar
+    path: '/app/leads', 
+    icon: <InboxArrowDownIcon className={iconClasses}/>, 
+    name: 'Leads', r
   },
   {
-    path: '/app/transactions', // url
-    icon: <CurrencyDollarIcon className={iconClasses}/>, // icon component
-    name: 'Transactions', // name that appear in Sidebar
+    path: '/app/transactions', 
+    icon: <CurrencyDollarIcon className={iconClasses}/>, 
+    name: 'Transactions', 
   },
   {
-    path: '/app/integration', // url
-    icon: <BoltIcon className={iconClasses}/>, // icon component
-    name: 'Integration', // name that appear in Sidebar
+    path: '/app/integration', 
+    icon: <BoltIcon className={iconClasses}/>, 
+    name: 'Integration', 
   },
   {
-    path: '/app/calendar', // url
-    icon: <CalendarDaysIcon className={iconClasses}/>, // icon component
-    name: 'Calendar', // name that appear in Sidebar
+    path: '/app/calendar', 
+    icon: <CalendarDaysIcon className={iconClasses}/>,
+    name: 'Calendar', 
   },
 
   
