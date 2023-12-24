@@ -6,9 +6,10 @@ import InputText from '../../components/Input/InputText'
 function Register(){
 
     const INITIAL_REGISTER_OBJ = {
-        name : "",
+        fullName : "",
+        email : "",
         password : "",
-        emailId : ""
+        passwordConfirm : ""
     }
 
     const [loading, setLoading] = useState(false)
@@ -19,14 +20,15 @@ function Register(){
         e.preventDefault()
         setErrorMessage("")
 
-        if(registerObj.name.trim() === "")return setErrorMessage("Name is required! (use any value)")
-        if(registerObj.emailId.trim() === "")return setErrorMessage("Email Id is required! (use any value)")
+        if(registerObj.fullName.trim() === "")return setErrorMessage("fullName is required! (use any value)")
+        if(registerObj.email.trim() === "")return setErrorMessage("Email is required! (use any value)")
         if(registerObj.password.trim() === "")return setErrorMessage("Password is required! (use any value)")
+        if(registerObj.passwordConfirm.trim() === "")return setErrorMessage("PasswordConfirm is required! (use any value)")
         else{
             setLoading(true)
             localStorage.setItem("token", "DumyTokenHere")
             setLoading(false)
-            window.location.href = '/app/dashboard'
+            window.location.href = '/dashboard/dashboard'
         }
     }
 
@@ -45,11 +47,13 @@ function Register(){
 
                         <div className="mb-4">
 
-                            <InputText defaultValue={registerObj.name} updateType="name" containerStyle="mt-4" labelTitle="Name" updateFormValue={updateFormValue}/>
+                            <InputText defaultValue={registerObj.fullName} updateType="name" containerStyle="mt-4" labelTitle="Name" updateFormValue={updateFormValue}/>
 
-                            <InputText defaultValue={registerObj.emailId} updateType="emailId" containerStyle="mt-4" labelTitle="Email Id" updateFormValue={updateFormValue}/>
+                            <InputText defaultValue={registerObj.email} updateType="emailId" containerStyle="mt-4" labelTitle="Email Id" updateFormValue={updateFormValue}/>
 
                             <InputText defaultValue={registerObj.password} type="password" updateType="password" containerStyle="mt-4" labelTitle="Password" updateFormValue={updateFormValue}/>
+
+                            <InputText defaultValue={registerObj.passwordConfirm} type="password" updateType="password" containerStyle="mt-4" labelTitle="Password" updateFormValue={updateFormValue}/>
 
                         </div>
 

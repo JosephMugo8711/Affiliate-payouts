@@ -1,6 +1,5 @@
 import {useState, useRef} from 'react'
 import {Link} from 'react-router-dom'
-import LandingIntro from './LandingIntro'
 import ErrorText from  '../../components/Typography/ErrorText'
 import InputText from '../../components/Input/InputText'
 
@@ -8,7 +7,7 @@ function Login(){
 
     const INITIAL_LOGIN_OBJ = {
         password : "",
-        emailId : ""
+        email : ""
     }
 
     const [loading, setLoading] = useState(false)
@@ -19,14 +18,14 @@ function Login(){
         e.preventDefault()
         setErrorMessage("")
 
-        if(loginObj.emailId.trim() === "")return setErrorMessage("Email Id is required! (use any value)")
+        if(loginObj.email.trim() === "")return setErrorMessage("Email is required! (use any value)")
         if(loginObj.password.trim() === "")return setErrorMessage("Password is required! (use any value)")
         else{
             setLoading(true)
             // Call API to check user credentials and save token in localstorage
             localStorage.setItem("token", "DumyTokenHere")
             setLoading(false)
-            window.location.href = '/app/dashboard'
+            window.location.href = '/dashboard/dashboard'
         }
     }
 
@@ -45,7 +44,7 @@ function Login(){
 
                         <div className="mb-4">
 
-                            <InputText type="emailId" defaultValue={loginObj.emailId} updateType="emailId" containerStyle="mt-4" labelTitle="Email Id" updateFormValue={updateFormValue}/>
+                            <InputText type="email" defaultValue={loginObj.email} updateType="email" containerStyle="mt-4" labelTitle="Email" updateFormValue={updateFormValue}/>
 
                             <InputText defaultValue={loginObj.password} type="password" updateType="password" containerStyle="mt-4" labelTitle="Password" updateFormValue={updateFormValue}/>
 

@@ -33,9 +33,9 @@ function App() {
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/register" element={<Register />} />
           
-          <Route path="/app/*" element={<Layout />} />
+          <Route path="/dashboard/*" element={<Layout />} />
 
-          <Route path="*" element={<Navigate to={token ? "/app/dashboard" : "/login"} replace />}/>
+          <Route path="*" element={<Navigate to={token ? "/dashboard/dashboard" : "/login"} replace />}/>
 
         </Routes>
       </Router>

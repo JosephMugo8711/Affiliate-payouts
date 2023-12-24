@@ -11,27 +11,22 @@ const submenuIconClasses = `h-5 w-5`
 const routes = [
 
   {
-    path: '/app/dashboard',
+    path: '/dashboard/dashboard',
     icon: <Squares2X2Icon className={iconClasses}/>, 
     name: 'Dashboard',
   },
   {
-    path: '/app/leads', 
+    path: '/dashboard/leads', 
     icon: <InboxArrowDownIcon className={iconClasses}/>, 
     name: 'Leads', 
   },
   {
-    path: '/app/transactions', 
+    path: '/dashboard/transactions', 
     icon: <CurrencyDollarIcon className={iconClasses}/>, 
     name: 'Transactions', 
   },
   {
-    path: '/app/integration', 
-    icon: <BoltIcon className={iconClasses}/>, 
-    name: 'Integration', 
-  },
-  {
-    path: '/app/calendar', 
+    path: '/dashboard/calendar', 
     icon: <CalendarDaysIcon className={iconClasses}/>,
     name: 'Calendar', 
   },
