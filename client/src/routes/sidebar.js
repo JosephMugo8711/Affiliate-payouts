@@ -26,10 +26,10 @@ const routes = [
     name: 'Transactions', 
   },
   {
-    path: '/dashboard/calendar', 
-    icon: <CalendarDaysIcon className={iconClasses}/>,
-    name: 'Calendar', 
-  },
+    path: '/dashboard/settings',
+    icon: <InboxArrowDownIcon className={iconClasses}/>, 
+    name: 'Settings'
+  }
 
   
 ]
